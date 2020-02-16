@@ -1,0 +1,45 @@
+body{
+    background: #caf4f7;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+    .inner{
+        background: rgb(39, 215, 228);
+        padding: 1rem;
+        border-radius: 10px;
+        width: 250px;
+        clip-path: circle(10% at 90% 20%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        h1{
+            color: #fff;
+            margin: 0;
+        }
+        p{
+            color: #fff;
+            font-size: 0.8rem;
+        }
+        span{
+            float: right;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            margin-right: 4%;
+            transition: color 0.5s;
+
+        }
+        &:hover {
+            clip-path: circle(75%);
+            background: #00b6ff;
+        } 
+        &:hover span{
+            color: transparent; 
+        }
+    }
+    
